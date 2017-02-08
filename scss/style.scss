@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+@font-face {
+    font-family: 'Goth Trump';
+    src: url('../fonts/trump_gothic_east_bold-webfont.woff2') format('woff2'),
+         url('../fonts/trump_gothic_east_bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import "slick.scss";
+@import "slick-theme.scss";
+@import "normalize.scss";
+@import "layout.scss";
+
+
+body{
+	font: 300 14px/1.6 Lato, Arial, sans-serif;
+	color: #C1C1C1;
+	background: #F6F6F6;
+	
+}
+
+/* Layout */
+.ba-container{
+	padding: 0 25px;
+	max-width: 1050px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-main{
+	padding: 75px 0;
+}
+.ba-slide{
+	padding: 25px;
+	outline: none;
+	border: none;
+	background: white;
+}
+.ba-dots{
+	text-align: center;
+	top: 85px;
+	right: 25px;
+	margin: 0;
+	padding-left: 0 !important;
+    list-style: none;
+    display: block;
+    position: absolute;
+    li {
+        display: block;
+		height: 16px;
+		width: 16px;
+		background: transparent;
+		margin: 20px 0;
+		position: relative;
+		&:hover, &:active{
+			cursor: pointer;
+		}
+		&.slick-active{
+			font-style: bold;
+			color: black;
+		}
+		button{
+			display: none;
+		}
+	}
+	#slick-slide00::after{
+	    	content: "01";
+	    }
+	#slick-slide01::after{
+	    	content: "02";
+	    }
+	#slick-slide02::after{
+	    	content: "03";
+	    }
+	#slick-slide03::after{
+	    	content: "04";
+	    }
+}
+.ba-info{
+	padding: 25px 0 40px;
+	position: relative;
+	img{
+		margin-bottom: 360px;	
+	}
+	h2{
+		text-transform: uppercase;
+		color: #E34D4F;
+		font-family: 'Goth Trump', Lato, Arial, sans-serif;
+		font-size: 102px;
+		width: 206px;
+		margin: 0;
+		line-height: 1;
+		position: absolute;
+		top: 84px;
+		left: -70px;
+	}
+	a{
+		color: #E34D4F;
+		text-transform: uppercase;
+		font-size: 12px;
+		letter-spacing: .25em;
+		text-decoration: none;
+		outline: none;
+		&:hover{
+			color: #E6E7E7;
+		}
+	}
+
+}
